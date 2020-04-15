@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails hooper-rest-api: production" uuid="0d38b1d0-8d37-4509-b5ba-ce8941ab32f7">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hooper_rest_api_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails hooper-rest-api: test" uuid="1b4ed4f9-b181-4cc2-af4d-6f24f72ca061">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hooper_rest_api_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails hooper-rest-api: development" uuid="e5ed8df5-259f-4058-bb0a-06469e259bc0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hooper_rest_api_development</jdbc-url>
+    </data-source>
+  </component>
+</project>

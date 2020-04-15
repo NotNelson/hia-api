@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee: one
+  aircraft: one
+  date: 
+  text: 
+
+two:
+  employee: two
+  aircraft: two
+  date: 
+  text: 
