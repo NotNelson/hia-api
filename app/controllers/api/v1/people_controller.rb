@@ -1,5 +1,7 @@
 class Api::V1::PeopleController < ApplicationController
   def index
+    a = params[:search]
+    puts a
     @people = Person.all
     render json: @people
   end
@@ -36,6 +38,18 @@ class Api::V1::PeopleController < ApplicationController
       render json: { message: 'Record successfully deleted.' }, status: 200
     else
       render json: { error: 'Unable to delete record.' }, status: 400
+    end
+  end
+
+  def person_exists
+    birth_date = params[:birth_date]
+    last_name = params[:last_name]
+    matches = Person.where(birth_date: birth_date, last_name: last_name)
+
+    if matches.count > 0
+      render json: { message: 'Person already on the database' }, status: 200
+    else
+      render json: { message: 'Person is not on the database' }, status: 200
     end
   end
 

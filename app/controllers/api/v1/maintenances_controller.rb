@@ -1,7 +1,8 @@
 class Api::V1::MaintenancesController < ApplicationController
   def index
-    @maintenances = Maintenance.all
-    render json: @maintenances
+    employee_id = params[:employee_id]
+    @maintenance = Maintenance.where(employee_id: employee_id)
+    render json: @maintenance
   end
 
   def show

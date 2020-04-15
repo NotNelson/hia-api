@@ -39,6 +39,13 @@ class Api::V1::PassengersController < ApplicationController
     end
   end
 
+  def list_passengers
+    flight_id = Booking.find(params[:booking_id]).flight.id
+    bookings_for_flight = Booking.where(flight_id: flight_id)
+    passengers = Passenger.where(booking_id: bookings_for_flight)
+    render json: { message: passengers }, status: 200
+  end
+
   private
   def passenger_params
     params.require(:passenger).permit(:customer_id, :booking_id)
