@@ -33,7 +33,10 @@ install_plugin Capistrano::SCM::Git
 # require "capistrano/rails/assets"
 # require "capistrano/rails/migrations"
 # require "capistrano/passenger"
-require 'capistrano/rails'
+#
+# Below like includes '/migrations' to avoid precompiling asset pipeline
+# we dont need that since this is a API app.
+require 'capistrano/rails/migrations'
 require 'capistrano/passenger'
 require 'capistrano/rbenv'
 
